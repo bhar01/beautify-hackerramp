@@ -1,1 +1,2 @@
-Contains static files
+Static folder
+
