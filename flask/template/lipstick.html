@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+
+}
+
+html {
+
+    background-color: lavenderblush;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; }
+span{ color:red;}
+.wrapper{
+max-width: 4000px;
+width: 100%;
+    max-height: 4000px;
+
+
+
+
+background: #fff;
+margin: 20px auto;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.125);padding: 30px;
+}
+.center {
+
+    align-items: center;
+}
+        .btn{ width: 33%;
+padding: 8px 10px; font-size: 15px;
+border: 0px; background: powderblue  ; color: black;
+cursor: pointer; border-radius: 3px; outline: none;
+}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+        <img id="bg" class="center" src="{{ url_for('start_streaming') }}">
+</div>
+
+<form action="{{ url_for('change_shade') }}" method="post">
+
+    <tr>
+        {% for i in range(0,3) %}
+           <input type="submit" class="btn" name="submit_button" value="{{ names[i] }}">
+
+        {% endfor %}
+    </tr>
+</form>
+
+</body>
+</html>

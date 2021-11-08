@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Upload</title>
+     <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+<form method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <div class="wrapper">
+    <div class="title"> {{ attr }} Match
+    </div>
+
+        <div class="form">
+
+        <div class="inputfield">
+      {{  form.file.label(class_='label', id='i') }}
+    {{   form.file() }}
+
+    </div>
+
+    </div>
+
+    <div class="form">
+<div class="inputfield">
+<input type="submit" value="SUBMIT" class="btn">
+</div>
+
+ </div>
+    </div>
+
+</form>
+</div>
+</body>
+</html>
