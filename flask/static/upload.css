@@ -1,0 +1,24 @@
+body{
+    background: url("bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: none;
+    margin: 0px;
+}
+.container {
+        font-family: Courier, monospace;
+        position: absolute;
+        top: 39%;
+        left: 35%;
+
+}
+#upload {
+    width: 12%;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 140%;
+    text-align: center;
+    background-color: thistle;
+    border-color: thistle;
+}
